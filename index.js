@@ -8,7 +8,7 @@ const url = require('./url')
 /**
 * Transform files from git or your local filesystem, or a url
 *
-* @name transformTemplate
+* @name transformer
 * @param {string} source - filepath, url, or git repo
 * @param {[object]} options - optional object
 * @param {[function]} options.transform - function that can transform each file
@@ -17,7 +17,7 @@ const url = require('./url')
 * @param {[string]} options.cacheDirectory - filepath for caching git & dat downloads
 * @return {object} returns a stream of file and directory objects that can be used to construct a new directory
 **/
-module.exports = async function transformTemplate (source, options = {}) {
+module.exports = async function transformer (source, options = {}) {
   try {
     return await git(source, options)
   } catch (err) {
