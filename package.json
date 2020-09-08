@@ -1,0 +1,46 @@
+{
+  "name": "@appa-ui/transformer",
+  "version": "0.0.0",
+  "description": "transform a template file or directory from url, git, or filesystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "uvu tests",
+    "lint": "standard",
+    "lintfix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appa-ui/transformer.git"
+  },
+  "keywords": [
+    "template",
+    "scaffold"
+  ],
+  "author": "sethvincent <sethvincent@gmail.com> (https://sethvincent.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appa-ui/transformer/issues"
+  },
+  "homepage": "https://github.com/appa-ui/transformer#readme",
+  "dependencies": {
+    "custom-error-class": "^1.0.0",
+    "debug": "^4.1.1",
+    "end-of-stream": "^1.4.4",
+    "folder-reader": "^2.0.0",
+    "from2-array": "0.0.4",
+    "front-matter": "^4.0.2",
+    "got": "^11.6.0",
+    "gunzip-maybe": "^1.4.2",
+    "hosted-git-info": "^3.0.5",
+    "mkdirp": "^1.0.4",
+    "pump": "^3.0.0",
+    "regex-git": "^1.0.0",
+    "tar-fs": "^2.1.0",
+    "through2": "^4.0.2"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.6",
+    "standard": "^14.3.4",
+    "uvu": "^0.3.3"
+  }
+}
